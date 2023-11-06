@@ -48,11 +48,10 @@ class CNN(Model):
                 self.optimizer.apply_gradients(zip(grads, self.model.trainable_weights))
                 self.train_accuracy.update_state(y_batch_train, logits)
                 self.train_accuracy.reset_states()
-                if test_ds: 
-                     self.test(test_ds)
-                     if step%10==0 and step!=0:
-                        test_acc = self.test_accuracy.result()
-                        print("Test acc: %.4f" % (float(test_acc),))
+            if test_ds: 
+                self.test(test_ds)
+                test_acc = self.test_accuracy.result()
+                print("Test acc: %.4f" % (float(test_acc),))
 
 
     def test(self,test_ds):
