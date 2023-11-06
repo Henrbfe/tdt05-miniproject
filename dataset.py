@@ -4,15 +4,8 @@ import matplotlib.pyplot as plt
 from constants import CLASS_NAMES
 
 
-# Construct a tf.data.Dataset
-ds_train, ds_test = tfds.load('fashion_mnist', split=['train','test'], shuffle_files=False)
-
-#ds_train = ds_train.shuffle(1024).batch(32).prefetch(tf.data.AUTOTUNE)
-
-
-
 def get_train_test_split(visualise=False):
-    ds_train, ds_test = tfds.load('fashion_mnist', split=['train','test'], shuffle_files=False)
+    (ds_train, ds_test), ds_info = tfds.load('fashion_mnist', split=['train', 'test'], shuffle_files=True, as_supervised=True, with_info=True)
     if visualise: 
         plt.figure(figsize=(10, 10))
         i = 0
@@ -28,3 +21,13 @@ def get_train_test_split(visualise=False):
         plt.show()
     return ds_train, ds_test
     
+# Extract and preprocess data from tf.data.Dataset
+def preprocess_data(image, label):
+    image = tf.cast(image, tf.float32) / 255.0
+    image = tf.reshape(image, (-1, 28, 28, 1))
+    label = tf.one_hot(label, depth=10)
+    return image, label
+
+# Apply preprocessing to the datasets
+# ds_train = ds_train.map(preprocess_data)
+# ds_test = ds_test.map(preprocess_data)
