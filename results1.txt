@@ -1,0 +1,166 @@
+--------- supervised_x ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.76      0.78      0.77      1000
+     Trouser       0.96      0.93      0.95      1000
+    Pullover       0.62      0.68      0.65      1000
+       Dress       0.84      0.75      0.79      1000
+        Coat       0.66      0.59      0.62      1000
+      Sandal       0.91      0.86      0.88      1000
+       Shirt       0.51      0.59      0.55      1000
+     Sneaker       0.91      0.75      0.82      1000
+         Bag       0.93      0.91      0.92      1000
+  Ankle boot       0.79      0.96      0.87      1000
+
+    accuracy                           0.78     10000
+   macro avg       0.79      0.78      0.78     10000
+weighted avg       0.79      0.78      0.78     10000
+
+--------- supervised_x_noisy ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.72      0.68      0.70      1000
+     Trouser       0.98      0.91      0.94      1000
+    Pullover       0.41      0.80      0.54      1000
+       Dress       0.87      0.63      0.73      1000
+        Coat       0.70      0.37      0.49      1000
+      Sandal       0.88      0.68      0.77      1000
+       Shirt       0.47      0.49      0.48      1000
+     Sneaker       0.95      0.56      0.71      1000
+         Bag       0.82      0.90      0.86      1000
+  Ankle boot       0.69      0.98      0.81      1000
+
+    accuracy                           0.70     10000
+   macro avg       0.75      0.70      0.70     10000
+weighted avg       0.75      0.70      0.70     10000
+
+--------- supervised_noisy ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.70      0.83      0.76      1000
+     Trouser       0.94      0.94      0.94      1000
+    Pullover       0.73      0.47      0.57      1000
+       Dress       0.80      0.77      0.78      1000
+        Coat       0.49      0.90      0.63      1000
+      Sandal       0.83      0.71      0.77      1000
+       Shirt       0.52      0.23      0.32      1000
+     Sneaker       0.78      0.81      0.80      1000
+         Bag       0.94      0.81      0.87      1000
+  Ankle boot       0.79      0.95      0.86      1000
+
+    accuracy                           0.74     10000
+   macro avg       0.75      0.74      0.73     10000
+weighted avg       0.75      0.74      0.73     10000
+
+2023-11-15 13:16:38.613154: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 627200000 exceeds 10% of free system memory.
+2023-11-15 13:16:38.927990: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 627200000 exceeds 10% of free system memory.
+2023-11-15 13:16:39.095246: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 627200000 exceeds 10% of free system memory.
+--------- encdec_x ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.78      0.77      0.77      1000
+     Trouser       0.93      0.95      0.94      1000
+    Pullover       0.65      0.67      0.66      1000
+       Dress       0.86      0.72      0.79      1000
+        Coat       0.58      0.86      0.70      1000
+      Sandal       0.97      0.74      0.84      1000
+       Shirt       0.65      0.39      0.49      1000
+     Sneaker       0.86      0.77      0.82      1000
+         Bag       0.90      0.93      0.92      1000
+  Ankle boot       0.73      0.98      0.83      1000
+
+    accuracy                           0.78     10000
+   macro avg       0.79      0.78      0.78     10000
+weighted avg       0.79      0.78      0.78     10000
+
+2023-11-15 13:16:39.947477: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 627200000 exceeds 10% of free system memory.
+2023-11-15 13:16:40.270399: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 627200000 exceeds 10% of free system memory.
+--------- encdec_x_noisy ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.78      0.70      0.74      1000
+     Trouser       0.95      0.94      0.94      1000
+    Pullover       0.47      0.74      0.57      1000
+       Dress       0.89      0.65      0.75      1000
+        Coat       0.59      0.73      0.65      1000
+      Sandal       0.99      0.54      0.70      1000
+       Shirt       0.59      0.32      0.42      1000
+     Sneaker       0.86      0.73      0.79      1000
+         Bag       0.80      0.94      0.86      1000
+  Ankle boot       0.66      0.99      0.79      1000
+
+    accuracy                           0.73     10000
+   macro avg       0.76      0.73      0.72     10000
+weighted avg       0.76      0.73      0.72     10000
+
+--------- encdec_noisy ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.77      0.76      0.76      1000
+     Trouser       0.96      0.93      0.94      1000
+    Pullover       0.70      0.56      0.62      1000
+       Dress       0.85      0.75      0.80      1000
+        Coat       0.60      0.76      0.67      1000
+      Sandal       0.98      0.70      0.82      1000
+       Shirt       0.51      0.53      0.52      1000
+     Sneaker       0.82      0.85      0.84      1000
+         Bag       0.88      0.95      0.91      1000
+  Ankle boot       0.79      0.97      0.87      1000
+
+    accuracy                           0.78     10000
+   macro avg       0.79      0.78      0.78     10000
+weighted avg       0.79      0.78      0.78     10000
+
+--------- enc_x ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.80      0.68      0.73      1000
+     Trouser       0.92      0.94      0.93      1000
+    Pullover       0.54      0.78      0.64      1000
+       Dress       0.83      0.72      0.77      1000
+        Coat       0.61      0.66      0.63      1000
+      Sandal       0.83      0.87      0.85      1000
+       Shirt       0.57      0.40      0.47      1000
+     Sneaker       0.87      0.80      0.83      1000
+         Bag       0.91      0.91      0.91      1000
+  Ankle boot       0.85      0.92      0.89      1000
+
+    accuracy                           0.77     10000
+   macro avg       0.77      0.77      0.77     10000
+weighted avg       0.77      0.77      0.77     10000
+
+--------- enc_x_noisy ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.85      0.47      0.60      1000
+     Trouser       0.94      0.92      0.93      1000
+    Pullover       0.33      0.88      0.48      1000
+       Dress       0.90      0.56      0.69      1000
+        Coat       0.68      0.40      0.50      1000
+      Sandal       0.87      0.74      0.80      1000
+       Shirt       0.41      0.17      0.24      1000
+     Sneaker       0.92      0.65      0.76      1000
+         Bag       0.69      0.94      0.79      1000
+  Ankle boot       0.79      0.94      0.86      1000
+
+    accuracy                           0.67     10000
+   macro avg       0.74      0.67      0.67     10000
+weighted avg       0.74      0.67      0.67     10000
+
+--------- enc_noisy ---------
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.81      0.67      0.73      1000
+     Trouser       0.95      0.92      0.94      1000
+    Pullover       0.57      0.74      0.64      1000
+       Dress       0.79      0.78      0.78      1000
+        Coat       0.68      0.65      0.66      1000
+      Sandal       0.79      0.85      0.82      1000
+       Shirt       0.49      0.48      0.49      1000
+     Sneaker       0.84      0.81      0.83      1000
+         Bag       0.91      0.89      0.90      1000
+  Ankle boot       0.89      0.86      0.87      1000
+
+    accuracy                           0.77     10000
+   macro avg       0.77      0.77      0.77     10000
+weighted avg       0.77      0.77      0.77     10000
